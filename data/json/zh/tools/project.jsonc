@@ -16,5 +16,11 @@
         "description": "提供项目详情与融资数据，便于投资者了解项目情况.",
         "url": "http://chainbroker.io/",
         "tags": ["项目", "融资", "投资"]
+    },
+    {
+        "name": "Dapprader",
+        "description":"World’s Dapp Store（世界Dapp商店）让与NFT、DeFi、SocialFi、GameFi等相关的区块链数据变得可探索、可发现且富有洞察力。我们于2018年创立了DappRadar，现已成为区块链行业最值得信赖的数据来源。我们让探索、追踪和发现变得对每个人都有价值和回报。",
+        "url":"https://dappradar.com/",
+        "tags":["dapp"]
     }
 ]
