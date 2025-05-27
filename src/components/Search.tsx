@@ -28,22 +28,22 @@ export function Search({ className }: { className?: string }) {
         <div className="flex flex-col justify-center items-center gap-2">
             <Command className={cn("rounded-lg border shadow-md", className)}>
                 <CommandInput placeholder={t('input_placeholder')} value={search} onValueChange={setSearch} />
-                <CommandList>
+                {/* <CommandList>
                     <CommandGroup heading={t('heading')}>
-                        <CommandItem onSelect={() => window.location.href = '/tools/ai'}>
+                        <CommandItem onSelect={() => window.location.href = '/category/project'}>
                             <LightningBoltIcon className="mr-2 h-4 w-4" />
-                            <span>AI</span>
+                            <span>项目融资</span>
                         </CommandItem>
-                        <CommandItem onSelect={() => window.location.href = '/tools/seo'}>
+                        <CommandItem onSelect={() => window.location.href = '/category/chaindata'}>
                             <GlobeIcon className="mr-2 h-4 w-4" />
-                            <span>SEO</span>
+                            <span>链上数据分析</span>
                         </CommandItem>
                         <CommandItem disabled>
                             <DotsHorizontalIcon className="mr-2 h-4 w-4" />
                             <span>{t('more')}</span>
                         </CommandItem>
                     </CommandGroup>
-                </CommandList>
+                </CommandList> */}
             </Command>
             {search &&
                 <Button variant="outline" className='mt-6' onClick={() => window.location.href = `/tools/${encodeURIComponent(search)}`}>

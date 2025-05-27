@@ -14,6 +14,12 @@
     // F
     // G
     {
+        "name": "Dify.AI",
+        "description": "Dify.AI 是一个面向生成式人工智能（如大语言模型）的​应用开发与部署平台，旨在帮助用户快速构建、定制并集成 AI 驱动的工具，降低开发门槛，提升人机协作效率",
+        "url": "https://dify.ai/ßß",
+        "tags": ["AI应用开发", "零代码开发", "AI应用集成", "AI应用部署", "AI应用管理", "AI应用开发平台"]
+    },
+    {
       "name": "sketch.metademolab.com",
       "description": "上传图片，生成动画",
       "url": "https://sketch.metademolab.com/canvas",
@@ -30,5 +36,6 @@
         "description":"多帧生成视频",
         "url":"https://pollo.ai/home",
         "tags":["video"]
+
     }
   ]

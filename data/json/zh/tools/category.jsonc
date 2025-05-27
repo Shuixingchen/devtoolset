@@ -84,6 +84,12 @@
     "link": "airdrop",
     "description": "空投信息&工具"
   },
+  {
+    "name": "DAO&治理工具",
+    "src": "dao.jsonc",
+    "link": "dao",
+    "description": "DAO&治理工具"
+  },
   // X
   // Y
   // Z
