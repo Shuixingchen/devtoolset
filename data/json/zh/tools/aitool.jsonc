@@ -30,5 +30,12 @@
       "description": "根据描述，生成游戏人物",
       "url": "https://holopix.cn/",
       "tags": ["game", "动画"]
+    },
+    {
+        "name":"Pika",
+        "description":"多帧生成视频",
+        "url":"https://pollo.ai/home",
+        "tags":["video"]
+
     }
   ]
