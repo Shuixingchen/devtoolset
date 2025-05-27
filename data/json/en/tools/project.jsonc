@@ -1,20 +1,44 @@
 [
     {
         "name": "RootData",
-        "description": "Project details and financing information query platform, helping to fully grasp project data.",
+        "description": "A platform for querying project details and financing information, helping to comprehensively grasp project data.",
         "url": "http://rootdata.com/",
-        "tags": ["project", "financing", "data"]
+        "tags": ["Project", "Financing", "Data"]
     },
     {
         "name": "ICO Analytics",
-        "description": "Focus on financing information, transaction flow data and project progress analysis.",
+        "description": "Focus on financing information, transaction flow data, and project progress analysis.",
         "url": "http://icoanalytics.org/",
-        "tags": ["financing", "transaction", "analysis", "project progress"]
+        "tags": ["Financing", "Transaction", "Analysis", "Project Progress"]
     },
     {
         "name": "Chainbroker",
-        "description": "Provides project details and financing data for investors to understand project status.",
+        "description": "Provides project details and financing data, making it easy for investors to understand the project situation.",
         "url": "http://chainbroker.io/",
-        "tags": ["project", "financing", "investment"]
+        "tags": ["Project", "Financing", "Investment"]
+    },
+    {
+        "name": "Dapprader",
+        "description":"The World’s Dapp Store makes blockchain data related to NFTs, DeFi, SocialFi, GameFi, etc. explorable, discoverable, and insightful. We founded DappRadar in 2018, and it has now become the most trusted source of data in the blockchain industry. We make exploration, tracking, and discovery valuable and rewarding for everyone.",
+        "url":"https://dappradar.com/",
+        "tags":["dapp"]
+    },
+    {
+        "name": "TonUp",
+        "description":"Focusing on project incubation and investment opportunities, it is the “crowdfunding platform” of the TON ecosystem, suitable for crypto users who want to participate in early-stage projects or investments.",
+        "url":"https://tonup.io/",
+        "tags":["IDO","TON"]
+    },
+    {
+        "name": "TON App",
+        "description":"The “app store” of the TON ecosystem, providing users with one-stop access to dApps and services, suitable for exploring various applications in the TON ecosystem (such as GameFi, DeFi).",
+        "url":"https://ton.app/",
+        "tags":["TON"]
+    },
+    {
+        "name": "TON Ecosystem",
+        "description":"Explore Ecosystem Support programs to enhance your project’s growth",
+        "url":"https://eco.ton.org/",
+        "tags":["TON"]
     }
 ]
