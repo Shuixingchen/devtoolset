@@ -21,15 +21,6 @@
     "link": "roadmap",
     "description": "Guide for blockchain beginners to get started quickly."
   },
-  // B
-  // C
-  // D
-  {
-    "name": "Blockchain E-books",
-    "src": "ebook.jsonc",
-    "link": "ebook",
-    "description": "Blockchain-related e-books"
-  },
   {
     "name": "Project Funding",
     "src": "project.jsonc",
