@@ -58,50 +58,54 @@ const ToolsList = ({ category, locale, showMoreLink = true }: toolsListProps) =>
   const srcList = getDataList(category.src, locale)
 
   return (
-    <section>
-      <div className="flex justify-between items-center mb-6">
-        <h2 className="text-3xl font-bold tracking-tight capitalize">{category.name}</h2>
+    <section className="relative">
+      <div className="flex justify-between items-center mb-8">
+        <h2 className="text-3xl md:text-4xl font-bold tracking-tight capitalize bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">{category.name}</h2>
         {showMoreLink && (
-          <Link href={`/category/${category.link}`} className="capitalize text-blue-600 hover:text-blue-800 transition-colors hover:underline">
-            {t('more')} <span className='capitalize font-bold'>{category.name}</span> {t('tools')} →
+          <Link href={`/category/${category.link}`} className="group capitalize text-primary hover:text-primary/80 transition-all duration-300 hover:underline flex items-center gap-2">
+            {t('more')} <span className='capitalize font-bold'>{category.name}</span> {t('tools')}
+            <ArrowRightIcon className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Link>
         )}
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {/* @ts-ignore */}
         {srcList.slice(0,8).map((resource: toolProps, index) => (
-          <Card key={index} className='max-w-sm overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105 '>
-            <CardHeader>
+          <Card key={index} className='group relative overflow-hidden border-0 bg-card/50 backdrop-blur-sm hover-lift hover:bg-card/80 transition-all duration-300'>
+            <CardHeader className="space-y-4">
               <a 
                 href={`${resource.url}?utm_source=runtoweb3.com`} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-blue-600 hover:text-blue-800 transition-colors inline-flex items-center gap-1"
+                className="group/link text-foreground hover:text-primary transition-all duration-300 flex items-start gap-3"
               >
-                <div className='border border-gray-200 p-1 rounded-md mr-1 bg-white'>
-                  {/* <img width="20" height="20" src={`https://favicon.im/${resource.url}?larger=true`} alt={`${resource.name} favicon`} /> */}
+                <div className='relative flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-primary/10 to-accent/10 border border-border/50 flex items-center justify-center group-hover/link:scale-110 transition-transform duration-300'>
                   { resource.icon_url ?
-                    // <img width="20" height="20" src={resource.icon_url}  alt={`${resource.name} favicon`} />
-                    <Image width={20} height={20} src={resource.icon_url}  alt={`${resource.name} favicon`} loading='lazy'/>
+                    <Image width={24} height={24} src={resource.icon_url} alt={`${resource.name} favicon`} loading='lazy' className="rounded-lg"/>
                     :
-                    <img width="20" height="20" src={`https://favicon.im/${resource.url}?larger=true`} alt={`${resource.name} favicon`} loading='lazy'/>
+                    <img width="24" height="24" src={`https://favicon.im/${resource.url}?larger=true`} alt={`${resource.name} favicon`} loading='lazy' className="rounded-lg"/>
                   }
                 </div>
-                <CardTitle className='capitalize tracking-tighter'>{resource.name}</CardTitle>
-                <ExternalLink size={16} className='ml-1' />
-              </a>
-              <CardDescription className='flex flex-col justify-between '>
-                <div className='h-[60px] line-clamp-3 mt-1 tracking-tight text-start'>
-                  {resource.description}
+                <div className="flex-1 min-w-0">
+                  <CardTitle className='capitalize tracking-tight text-lg font-semibold group-hover/link:text-primary transition-colors duration-300 flex items-center gap-2'>
+                    {resource.name}
+                    <ExternalLink size={14} className='opacity-0 group-hover/link:opacity-100 transition-opacity duration-300' />
+                  </CardTitle>
                 </div>
-                { resource.tags ? 
-                  <div className='mt-3'>
+              </a>
+              <CardDescription className='space-y-4'>
+                <p className='text-sm text-muted-foreground leading-relaxed line-clamp-3'>
+                  {resource.description}
+                </p>
+                { resource.tags && resource.tags.length > 0 && (
+                  <div className='flex flex-wrap gap-1.5'>
                     {resource.tags.slice(0,3).map((tag, i) => (
-                      <Badge key={i} variant="secondary" className='text-xs pb-1 mr-1 mt-2 tracking-tighter'>{tag}</Badge>
+                      <Badge key={i} variant="secondary" className='text-xs px-2 py-1 rounded-full bg-primary/10 text-primary border-0 hover:bg-primary/20 transition-colors'>
+                        {tag}
+                      </Badge>
                     ))}
-                  </div> :
-                 null
-                }     
+                  </div>
+                )}     
               </CardDescription>
             </CardHeader>
           </Card>
