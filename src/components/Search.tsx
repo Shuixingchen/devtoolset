@@ -26,7 +26,7 @@ export function Search({ className }: { className?: string }) {
 
     return (
         <div className="flex flex-col justify-center items-center gap-2">
-            <Command className={cn("rounded-lg border shadow-md", className)}>
+            <Command className={cn("rounded-2xl border-0 bg-card/50 backdrop-blur-sm shadow-2xl web3-glow", className)}>
                 <CommandInput placeholder={t('input_placeholder')} value={search} onValueChange={setSearch} />
                 {/* <CommandList>
                     <CommandGroup heading={t('heading')}>

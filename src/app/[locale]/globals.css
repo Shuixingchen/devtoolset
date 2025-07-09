@@ -4,68 +4,69 @@
  
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 47.4% 11.2%;
+    /* Web3 inspired light theme with Apple aesthetics */
+    --background: 250 100% 99%; /* Very light blue-white */
+    --foreground: 220 15% 15%; /* Deep charcoal */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 47.4% 11.2%;
+    --card: 0 0% 100%; /* Pure white cards */
+    --card-foreground: 220 15% 15%;
  
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 47.4% 11.2%;
+    --popover-foreground: 220 15% 15%;
 
+    /* Web3 gradient primary - purple to blue */
+    --primary: 260 85% 65%; /* Vibrant purple */
+    --primary-foreground: 0 0% 100%;
  
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --secondary: 240 20% 96%; /* Light blue-gray */
+    --secondary-foreground: 220 15% 25%;
  
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 240 15% 97%; /* Very light blue-gray */
+    --muted-foreground: 220 10% 50%;
  
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 280 100% 95%; /* Light purple accent */
+    --accent-foreground: 260 85% 35%;
  
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
- 
-    --destructive: 0 100% 50%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 215 20.2% 65.1%;
+    --border: 240 20% 92%; /* Subtle blue-gray border */
+    --input: 240 20% 96%;
+    --ring: 260 85% 65%; /* Purple focus ring */
  
-    --radius: 0.5rem;
+    --radius: 0.75rem; /* More rounded for Apple feel */
   }
  
   .dark {
-   
-    --background: 220 10% 15%; /* Dark, desaturated grayish background */
-    --foreground: 0 0% 90%; /* Light gray foreground */
+    /* Web3 inspired dark theme with Apple aesthetics */
+    --background: 240 15% 8%; /* Deep blue-black */
+    --foreground: 240 10% 95%; /* Cool white */
 
-    --card: 220 10% 18%; /* Slightly lighter dark card */
-    --card-foreground: 0 0% 90%; /* Light gray card foreground */
+    --card: 240 15% 12%; /* Dark blue-gray cards */
+    --card-foreground: 240 10% 95%;
  
-    --popover: 220 10% 18%; /* Slightly lighter dark popover */
-    --popover-foreground: 0 0% 90%; /* Light gray popover foreground */
+    --popover: 240 15% 12%;
+    --popover-foreground: 240 10% 95%;
 
-    --primary: 220 5% 40%; /* Desaturated dark gray primary */
-    --primary-foreground: 0 0% 95%; /* Lighter gray primary foreground */
+    /* Web3 gradient primary - brighter in dark mode */
+    --primary: 270 90% 70%; /* Bright purple */
+    --primary-foreground: 240 15% 8%;
  
-    --secondary: 220 5% 30%; /* Muted, desaturated gray secondary */
-    --secondary-foreground: 0 0% 85%; /* Slightly darker light gray secondary foreground */
+    --secondary: 240 15% 18%; /* Dark blue-gray */
+    --secondary-foreground: 240 10% 85%;
  
-    --muted: 220 5% 25%; /* Darker muted background */
-    --muted-foreground: 0 0% 80%; /* Muted foreground in lighter gray */
+    --muted: 240 15% 15%; /* Darker blue-gray */
+    --muted-foreground: 240 8% 65%;
  
-    --accent: 220 5% 35%; /* Desaturated, dark gray accent */
-    --accent-foreground: 0 0% 90%; /* Light gray accent foreground */
+    --accent: 280 80% 25%; /* Dark purple accent */
+    --accent-foreground: 280 100% 90%;
  
-    --destructive: 0 100% 40%; /* Darker, more muted red for destructive */
-    --destructive-foreground: 0 0% 95%; /* Lighter gray foreground for destructive */
+    --destructive: 0 85% 65%;
+    --destructive-foreground: 240 15% 8%;
 
-    --border: 220 10% 25%; /* Darker gray border */
-    --input: 220 10% 25%; /* Darker gray input background */
-    --ring: 220 5% 40%; /* Darker, more muted gray ring */
+    --border: 240 15% 20%; /* Subtle blue-gray border */
+    --input: 240 15% 18%;
+    --ring: 270 90% 70%; /* Bright purple focus ring */
   }
 }
  
@@ -75,5 +76,56 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  /* Web3 gradient backgrounds */
+  .web3-gradient {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(260 100% 75%) 50%, hsl(280 100% 80%) 100%);
+  }
+  
+  .web3-gradient-dark {
+    background: linear-gradient(135deg, hsl(270 90% 20%) 0%, hsl(260 80% 25%) 50%, hsl(280 70% 30%) 100%);
+  }
+  
+  /* Glass morphism effect */
+  .glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .glass-dark {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Hover animations */
+  .hover-lift {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+  
+  /* Web3 glow effect */
+  .web3-glow {
+    box-shadow: 0 0 20px hsla(var(--primary), 0.3);
+  }
+  
+  /* Apple-style blur */
+  .apple-blur {
+    backdrop-filter: saturate(180%) blur(20px);
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .apple-blur-dark {
+    backdrop-filter: saturate(180%) blur(20px);
+    background-color: rgba(0, 0, 0, 0.6);
   }
 }

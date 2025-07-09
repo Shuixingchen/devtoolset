@@ -1,36 +1,42 @@
 
 // 
-// 注意：
-// 1. 所有数据应按字母顺序排序。
-// 2. 不允许使用联盟链接
-// 3. 请勿提交与开发无关的工具。
+// Note:
+// 1. All data should be sorted alphabetically.
+// 2. Affiliate links are not allowed.
+// 3. Please do not submit tools unrelated to development.
 
 [
-    // A
-    // B
-    // C
-    // D
-    // E
-    // F
-    // G
-    {
-      "name": "Google Analytics",
-      "description": "谷歌提供的强大的网络分析服务，可跟踪和报告网站流量、用户行为和转化率。",
-      "url": "https://analytics.google.com/",
-      "tags": ["分析", "网络", "跟踪"]
-    }
-    // H
-    // I
-    // J
-    // K
-    // L
-    // M
-    // N
-    // O
-    // P
-   
-    // W
-    // X
-    // Y
-    // Z
-  ]
+  // A
+  // B
+  // C
+  // D
+  // E
+  // F
+  // G
+  {
+    "name": "LearnBlockchain Community",
+    "description": "LearnBlockchain Community is a Chinese platform focused on blockchain technology learning and information sharing. It provides a wide range of content, including introductory tutorials, technical analysis, and industry dynamics, aiming to help readers interested in blockchain technology enhance their knowledge and skills.",
+    "url": "https://learnblockchain.cn/",
+    "tags": ["Web3", "Blockchain Forum", "Web3 Tutorial"]
+  },
+  {
+    "name": "HackQuest",
+    "description": "HackQuest is the gateway to the world of Web3 development, providing a comprehensive one-stop educational infrastructure to minimize friction and help developers and non-developers enter the Web3 world.",
+    "url": "https://www.hackquest.io/",
+    "tags": ["Web3", "Education", "Web3 Events"]
+  }
+  // H
+  // I
+  // J
+  // K
+  // L
+  // M
+  // N
+  // O
+  // P
+ 
+  // W
+  // X
+  // Y
+  // Z
+]

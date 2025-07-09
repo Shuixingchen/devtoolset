@@ -96,18 +96,21 @@ export const Navigation = ({ categories }: navigationProp ) => {
   ListItem.displayName = "ListItem"
   return (
 
-    <header className="sticky top-0 z-40 w-full border-b bg-background">
+    <header className="sticky top-0 z-40 w-full border-b border-border/40 apple-blur dark:apple-blur-dark">
       <div className="container flex h-16 items-center justify-between">
         <div className="flex gap-6 md:gap-10">
-          <Link href="/" className="flex items-center space-x-2">
-            <Image
-              src={IconImage}
-              className="block"
-              width={size}
-              height={size}
-              alt="DomainScore"
-            />
-            <span className="inline-block font-bold">runtoweb3</span>
+          <Link href="/" className="flex items-center space-x-3 group">
+            <div className="relative">
+              <Image
+                src={IconImage}
+                className="block transition-transform duration-300 group-hover:scale-110"
+                width={size}
+                height={size}
+                alt="runtoweb3"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-md"></div>
+            </div>
+            <span className="inline-block font-bold text-xl bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">runtoweb3</span>
           </Link>
           <nav className="hidden md:flex gap-6">
             <NavigationMenu>
