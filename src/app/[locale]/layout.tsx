@@ -45,6 +45,8 @@ export const metadata: Metadata = {
   ],
 }
 
+import Script from 'next/script'
+
 export default async function RootLayout({
   children,
   params: { locale }
@@ -57,8 +59,24 @@ export default async function RootLayout({
   return (
     <>
       <html lang={locale} suppressHydrationWarning>
-        <head />
-        <body className={cn(inter.className, sansFont.variable,
+        <head>
+          {/* Google Analytics */}
+          <Script
+            src="https://www.googletagmanager.com/gtag/js?id=G-B4ZBJG4VYE"
+            strategy="afterInteractive"
+          />
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-B4ZBJG4VYE');
+            `}
+          </Script>
+        </head>
+        <body className={cn(
+          "min-h-screen bg-background font-sans antialiased",
+          sansFont.variable
         )}>
           <NextIntlClientProvider messages={messages}>
             <ThemeProvider
