@@ -42,10 +42,16 @@
         "tags": ["跨链交易", "流动性池", "Web3", "高效"]
     },
     {
-        "name": "HYPT",
+        "name": "HYPE",
         "description": "一个创新的去中心化交易所，支持加密资产的无缝交易.",
         "url": "https://app.hyperliquid.xyz/trade",
         "tags": ["去中心化交易所", "加密资产", "无缝交易", "创新"]
+    },
+    {
+        "name": "edgeX",
+        "description": "一个创新的去中心化交易所，支持加密资产的无缝交易.",
+        "url": "https://pro.edgex.exchange/referral/936687890",
+        "tags": ["去中心化交易所", "加密资产"]
     },
     {
         "name": "CowSw",

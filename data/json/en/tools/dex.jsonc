@@ -42,10 +42,16 @@
         "tags": ["Cross-chain Trading", "Liquidity Pools", "Web3", "Efficient"]
     },
     {
-        "name": "HYPT",
+        "name": "HYPE",
         "description": "An innovative decentralized exchange supporting seamless trading of crypto assets.",
         "url": "https://app.hyperliquid.xyz/trade",
         "tags": ["Decentralized Exchange", "Crypto Assets", "Seamless Trading", "Innovation"]
+    },
+    {
+        "name": "edgeX",
+        "description": "An innovative decentralized exchange supporting seamless trading of crypto assets.",
+        "url": "https://pro.edgex.exchange/referral/936687890",
+        "tags": ["Decentralized Exchange", "Crypto Assets"]
     },
     {
         "name": "CowSw",
