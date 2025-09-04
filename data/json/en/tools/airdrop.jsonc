@@ -52,5 +52,12 @@
         "description": "Airdrop information query tool focused on the Cosmos ecosystem.",
         "url": "https://cosmos.leapwallet.io/airdrops",
         "tags": ["Cosmos", "Airdrop Information", "Query Tool"]
+    },
+    {
+        "name": "airdrop-checker",
+        "description": "Jupiter Airdrop Checker is LIVE",
+        "url": "https://jup.ag/portfolio/airdrop-checker",
+        "tags": ["Solana", "Airdrop Information", "jup"]
     }
+
 ]

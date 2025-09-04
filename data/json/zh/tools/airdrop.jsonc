@@ -52,5 +52,11 @@
         "description": "专注 Cosmos 生态的空投信息查询工具.",
         "url": "https://cosmos.leapwallet.io/airdrops",
         "tags": ["Cosmos", "空投信息", "查询工具"]
+    },
+    {
+        "name": "airdrop-checker",
+        "description": "Jupiter 空投检查工具",
+        "url": "https://jup.ag/portfolio/airdrop-checker",
+        "tags": ["Solana", "空投信息", "jup"]
     }
 ]
