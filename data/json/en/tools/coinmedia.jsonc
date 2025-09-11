@@ -70,5 +70,11 @@
         "description": "Provides easy-to-understand cryptocurrency and blockchain news, focusing on in-depth stories and industry trends.",
         "url": "https://decrypt.co/",
         "tags": ["crypto news", "blockchain news", "in-depth stories", "industry trends"]
+    },
+    {
+        "name": "crypto.news",
+        "description": "Focuses on cryptocurrency, blockchain, and related financial/technical dynamics, providing news and analysis.",
+        "url": "https://crypto.news/",
+        "tags": ["crypto news", "market analysis", "project news"]
     }
 ]
